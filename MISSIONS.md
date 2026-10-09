@@ -1,28 +1,44 @@
-# Your missions
+# Missions
 
-**The story:** your team is planning the **office day trip to the beach**. The plan lives in your team's repository (`trip-team-a` or `trip-team-b`) as plain text files:
-- the itinerary;
-- the lunch menu;
-- the packing list;
-- the beach games.
+Your team is planning the office trip to the beach. The plan is in your team's repo (`trip-team-a` or `trip-team-b`): the itinerary, the lunch menu, the packing list and the games. Some of it is broken on purpose.
 
-There's no coding today. Everything is about working on a shared document together, the way software teams do.
+There's no coding. It's all about working on one shared plan together.
 
-**Everything happens in VS Code:**
-- the **Source Control** view (the branch icon on the left);
-- the **GitHub** view (from the GitHub Pull Requests extension);
-- the **Command Palette** (`Ctrl+Shift+P`, or `Cmd+Shift+P` on a Mac);
-- the branch name at the **bottom left**;
-- for the few things VS Code has no button for, its own **terminal** (`` Ctrl+` ``).
+**Do everything in VS Code:** Source Control, the GitHub view (from the GitHub Pull Requests extension) and the Command Palette (`Ctrl+Shift+P`). Use the terminal (`` Ctrl+` ``) only where a step says so.
 
-**Your mission issues:** each mission has an issue in this repository, assigned to you (Issues > Assigned to me). Tick each box as you go.
+**Each mission has an issue assigned to you here.**
+- Tick the boxes as you go.
+- Stuck? Comment on the issue and add the `help` label.
+- Done? Comment the proof link it asks for.
 
-- **Stuck for 3 minutes:** comment on your mission issue with what you see and add the `help` label. The Office gets a notification and comes to you.
-- **Done:** tick the last box and comment with the proof link it asks for. The Office checks it, sets your XP on the scoreboard (the **Projects** tab) and closes the issue.
+## Skill check
+
+You do this twice: once at the start and once at the end. It isn't a test you pass or fail. It shows what you can do on your own, so the day can be judged on what changed.
+
+**Rules:**
+- work alone;
+- don't look at the cheatsheet or MISSIONS;
+- don't ask anyone;
+- do as many as you can in the time given, and skip anything you don't know.
+
+Work in your team's trip repository.
+
+1. Clone it in VS Code.
+2. Make a branch called `check/<your-name>-start` (at the end: `-end`).
+3. Add one item to `packing-list.md` and commit it with a clear message.
+4. Push the branch and open a pull request. Don't merge it.
+5. Change a line in `itinerary.md`, then throw the change away.
+6. Find out when the return time in the itinerary was changed, and to what. Write the answer in a comment on your pull request.
+7. Merge `scenario/conflict-prices` into your branch and resolve the conflict so that plain tea and milk tea stay.
+8. Undo your packing-list commit in a way that is safe for others, and push.
+
+When the time is up, comment on your pull request with the numbers you finished, for example `done: 1 2 3 4`.
 
 ---
 
-## Mission 1: on your own (Level 1, 30 minutes, up to 30 XP)
+## Mission 1: on your own
+
+Up to 30 XP.
 
 **1.1 Set up VS Code (5 XP)**
 
@@ -69,7 +85,9 @@ git config --global core.editor "code --wait"
 
 ---
 
-## Mission 2: working as a team (Level 2, 45 minutes, up to 50 XP)
+## Mission 2: working as a team
+
+Up to 50 XP.
 
 **2.1 Take your issue (5 XP)**
 
@@ -114,9 +132,11 @@ git config --global core.editor "code --wait"
 
 ---
 
-## Mission 3: the undo escape room (Level 3, 50 minutes, 10 XP per station)
+## Mission 3: the undo escape room
 
-There are four stations, 12 minutes each, all in your Mission 3 issue. Team A starts at Station 1 and Team B at Station 3, then you go round in order.
+10 XP per station.
+
+Four stations, all in your Mission 3 issue. Team A starts at Station 1, Team B at Station 3, then go round in order when the move is announced.
 
 - At each station, first make a fresh branch from `main`: `escape/<station>-<your-name>`.
 - Tick the station's box and paste the proof (a link to the commit, or a screenshot) in a comment.
@@ -180,7 +200,9 @@ git reset --hard HEAD@{2}   # or the exact line from reflog
 
 ---
 
-## Mission 4: GitHub's power tools (Level 4, 40 minutes, up to 45 XP)
+## Mission 4: GitHub's power tools
+
+Up to 45 XP.
 
 **4.1 The robot checker, GitHub Actions (15 XP)**
 
@@ -245,7 +267,9 @@ Commit something on `main` in VS Code and try **Sync**. Read the refusal. That's
 
 ---
 
-## Boss fight: publish the final trip plan v1.0.0 (45 minutes, team against team)
+## Boss fight: publish the final trip plan v1.0.0
+
+Team against team.
 
 **Goal:** a GitHub **Release `v1.0.0`** of your team's trip plan.
 
